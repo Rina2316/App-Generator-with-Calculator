@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+
+  .form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 750px;
+      max-height: 264px;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+
+      h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #333;
+          text-align: left;
+      }
+
+      p {
+          font-size: 20px;
+          margin-bottom: 20px;
+          color: #333;
+          text-align: left;
+      }
+
+      input {
+          width: 100%;
+          padding: 12px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 80px;
+          box-sizing: border-box;
+      }
+
+      .buttons {
+          display: flex;
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+          gap: 20px;
+
+          button {
+              padding: 12px 20px;
+              font-size: 16px;
+              background-color: #3B75A2;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                  background-color: #305e81;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+
+      .form {
+          padding: 15px;
+          max-height: none; 
+
+          h1 {
+              font-size: 20px; 
+          }
+
+          p {
+              font-size: 18px; 
+          }
+
+          input {
+              padding: 10px; 
+              margin-bottom: 130px;
+          }
+
+          .buttons {
+              flex-direction: column; 
+              bottom: 15px; 
+              right: 15px; 
+              gap: 10px; 
+              
+              button {
+                  width: 300px;
+                  font-size: 15px;
+              }
+          }
+      }
+  }
+}
